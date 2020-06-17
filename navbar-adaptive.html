@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #333;
+        }
+
+        a{
+            text-decoration: none;
+            color: beige;
+        }
+
+        /* BIG SCREEN */
+        .navbar{
+            display: table;
+            /* background-color: #444; */
+            background-image: linear-gradient( #333, #2228);
+            width: 100%;
+
+        }
+
+        .navbar ul{
+            display: table-row;
+        }
+
+        .navbar li{
+            display: table-cell;
+        }
+
+        .navbar li:hover{
+            background-color: #222;
+        }
+
+        .navbar li a{
+            padding: 1em;
+            display: block;
+            border-right: 1px solid #555;
+            text-align: center;
+        }
+
+        .navbar li.brand{
+            width: 30%;
+        }
+
+        .navbar li.bars{
+            display: none;
+        }
+
+        /* SMALL SCREEN */
+
+        @media (max-width:982px) {
+            .navbar li {
+                display: none;
+            }
+
+            .navbar li.brand,
+            .navbar li.phone{
+                display: table-cell;
+            }
+            .navbar li.bars{
+                display: table-cell;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="brand"><a href="">BRAND</a></li>
+            <li class="phone"><a href="">+37360 241413</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contacts</a></li>
+            <li class="bars"><a href=""><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

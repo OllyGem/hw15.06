@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Simple Adaptive</title>
+
+    <style>
+        /* Desktop */
+        body{
+            background-color: #333;
+        }
+
+        .container{
+            background-color: #555;
+            width: 80%;
+            margin: 5% auto;
+        }
+
+        .left{
+            width: 70%;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+
+        .right{
+            width: 25%;
+            background-color: brown;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 4%;
+        }
+
+        /*Device screen*/
+        @media (max-width: 800px){
+            .container{
+                width: 98%;
+            }
+            .left, .right{
+                display: block;
+                margin: 5%;
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <div class="left">
+           <h1>LEFT</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure optio quaerat. Dolore sequi nobis facere aspernatur aperiam eius dignissimos optio? Odio repellendus aspernatur quisquam eaque expedita vero voluptatibus consequuntur voluptatum rerum numquam repudiandae nam deserunt, consequatur odit nulla cupiditate iure reprehenderit! Unde fugit, sed voluptatum deleniti provident vero labore!</p>
+           <p>Minus reprehenderit quae dolorum repudiandae ipsam, nostrum voluptatibus consequatur odit, inventore unde sed? Enim, quam quas modi dolores maxime commodi. Dignissimos, pariatur? Nemo ducimus eveniet perspiciatis? Sequi molestiae error repellat velit autem id ex aut fugiat, in cupiditate magnam. Dolorum id temporibus exercitationem ipsa corrupti aperiam repudiandae illo, perspiciatis cumque!</p>
+           <p>Voluptate autem pariatur consectetur perspiciatis eum iste provident? Totam suscipit fugit eaque quasi explicabo ipsa ducimus magni quaerat officiis cupiditate eos voluptatibus repudiandae quidem sed omnis magnam, provident facilis, possimus aspernatur distinctio et qui? Reprehenderit quidem est sed at nisi impedit quod nemo accusantium tempore, explicabo corrupti sint nihil ipsa!</p>
+        </div>
+        <div class="right">
+            <h2>RIGHT</h2>
+
+            <h3>Lorem, ipsum dolor.</h3>
+            <h3>Quis, laudantium dolores!</h3>
+            <h3>Necessitatibus, ut sit.</h3>
+            <h3>Ducimus, unde dolore.</h3>
+            <h3>Cumque, fuga eius.</h3>
+        </div>
+    </section>
+    
+</body>
+</html>
